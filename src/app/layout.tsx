@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Julien Lopez",
-  description: "Julien Lopez - Front End Engineer",
+  title: "Julien Lopez | Front End Engineer",
+  description: "Julien Lopez is a Front End Engineer with a passion for building user-friendly web applications. Check out his portfolio!",
 };
 
 export default function RootLayout({
@@ -24,6 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" href="/favicon.ico" sizes="any" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
