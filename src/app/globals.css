@@ -1,8 +1,8 @@
 @import "tailwindcss";
 :root {
-  --background: #ffffff;
-  --foreground: #000b24;
-  interpolate-size: allow-keywords;
+    --background: #000b24;
+    --foreground: var(--color-slate-400);
+    --foreground-title: #edf2fa;
 }
 @theme inline {
   --color-background: var(--background);
