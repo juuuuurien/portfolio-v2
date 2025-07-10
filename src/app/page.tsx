@@ -62,8 +62,8 @@ export default function Home() {
   return (
     <>
       <Background></Background>
-      <div className="relative max-w-screen-xl grid grid-cols-[45%_55%] min-h-screen p-8 pb-20 gap-8 sm:py-0 sm:px-20 sm:mx-auto font-[family-name:var(--font-geist-sans)]">
-        <header className="py-20 flex flex-col gap-[32px] row-start-1 sm:items-start lg:sticky lg:top-0 lg:max-h-screen">
+      <div className="relative max-w-screen-xl grid grid-cols-1 lg:grid-cols-[45%_55%] min-h-screen p-4 lg:p-8 lg:pb-20 gap-8 sm:py-0 sm:px-20 sm:mx-auto font-[family-name:var(--font-geist-sans)]">
+        <header className="p-4 lg:py-20 flex flex-col gap-[32px] lg:row-start-1 sm:items-start lg:sticky lg:top-0 lg:max-h-screen">
           <div>
             <div className="flex align-bottom mb-2">
               <p>{`Hi, I'm`}</p>
@@ -91,8 +91,8 @@ export default function Home() {
             </ul>
           </div>
         </header>
-        <section className="py-20 h-fit flex flex-col gap-[32px] row-start-1 items-center sm:items-start">
-          <div className="group flex flex-col gap-[32px] sm:mb-8">
+        <section className="lg:py-20 h-fit flex flex-col gap-[32px] lg:row-start-1 items-center sm:items-start">
+          <div className="group flex flex-col gap-[32px] mb-8">
             <p className="mt-[2rem]">
               I&apos;m a{" "}
               <span className="relative inline-block before:transition-all before:delay-100 group-hover:before:opacity-25 before:absolute before:-inset-1 before:block before:bg-slate-400 before:blur-lg before:opacity-0">
@@ -161,7 +161,7 @@ export default function Home() {
               href="/resume.pdf"
               rel="noreferrer"
               target="_blank"
-              className="self-end animate-underline animate-underline-color-rose-400 hover:text-rose-400 transition-all cursor-pointer active:opacity-60 group w-fit"
+              className="lg:self-end mb-8 animate-underline animate-underline-color-rose-400 hover:text-rose-400 transition-all cursor-pointer active:opacity-60 group w-fit"
             >
               View my full resume
               <ArrowDownTrayIcon className="inline ml-1 size-4.5 mb-1 group-hover:text-rose-400 text-slate-500 delay-200 transition-colors" />
@@ -180,7 +180,7 @@ export default function Home() {
             ))}
           </div>
         </section>
-        <footer className="mb-4 col-span-2 row-start-1 sm:row-start-2 flex flex-col gap-4 items-center justify-center">
+        <footer className="lg:mb-4 lg:col-span-full flex flex-col gap-4 items-center justify-center">
           <div className="flex flex-col items-center gap-2">
             <p className="text-sm text-slate-500">© {`${new Date().getFullYear()}`} Julien Lopez</p>
             <p className="text-sm text-slate-500">Built with Next.js</p>

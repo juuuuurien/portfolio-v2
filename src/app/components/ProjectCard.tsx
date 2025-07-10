@@ -29,8 +29,8 @@ const ProjectCard = ({ skills, title, description, href, image }: ProjectCardPro
   );
 
   return (
-    <div className="group grid grid-cols-10 gap-x-5 h-fit hover:bg-slate-600/10 lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] transition-all p-4 rounded-lg">
-      <div className="col-span-3 flex flex-col gap-1.5">
+    <div className="group grid grid-cols-10 gap-x-5 h-fit mb-4 hover:bg-slate-600/10 lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] transition-all lg:p-4 rounded-lg">
+      <div className="col-span-4 flex flex-col gap-1.5">
         {href ? (
           <Link href={href} target="_blank" rel="noopener noreferrer" className="group">
             {imageContent}
@@ -39,7 +39,7 @@ const ProjectCard = ({ skills, title, description, href, image }: ProjectCardPro
           imageContent
         )}
       </div>
-      <div className="col-span-7 flex flex-col gap-2">
+      <div className="col-span-6 flex flex-col gap-2">
         {href ? (
           <Link href={href} target="_blank" rel="noopener noreferrer">
             <h3 className="group/title w-fit font-semibold w-fit">
