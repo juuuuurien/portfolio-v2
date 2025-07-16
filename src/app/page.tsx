@@ -62,14 +62,14 @@ export default function Home() {
   return (
     <>
       <Background></Background>
-      <div className="relative max-w-screen-xl grid grid-cols-1 lg:grid-cols-[45%_55%] min-h-screen p-4 lg:p-8 lg:pb-20 gap-8 sm:py-0 sm:px-20 sm:mx-auto font-[family-name:var(--font-geist-sans)]">
-        <header className="p-4 lg:py-20 flex flex-col gap-[32px] lg:row-start-1 sm:items-start lg:sticky lg:top-0 lg:max-h-screen">
+      <div className="relative max-w-screen-xl grid grid-cols-1 lg:grid-cols-[45%_55%] min-h-screen p-4 lg:px-8 gap-8 sm:py-0 sm:px-20 sm:mx-auto font-[family-name:var(--font-geist-sans)]">
+        <header className="py-4 lg:py-20 flex flex-col gap-[32px] lg:row-start-1 sm:items-start lg:sticky lg:top-0 lg:max-h-screen">
           <div>
             <div className="flex align-bottom mb-2">
               <p>{`Hi, I'm`}</p>
             </div>
             <h1 className="text-6xl mb-2">Julien Lopez</h1>
-            <h2 className="text-2xl mb-3">Front End Engineer,</h2>
+            <h2 className="text-2xl mb-3">Fullstack | Front End Engineer,</h2>
             <p className="group">
               and I{" "}
               <span className="relative inline-block before:transition-all before:delay-200 group-hover:before:opacity-25 before:absolute before:-inset-1 before:block before:bg-rose-500 before:blur-lg before:opacity-0">
@@ -96,7 +96,7 @@ export default function Home() {
             <p className="mt-[2rem]">
               I&apos;m a{" "}
               <span className="relative inline-block before:transition-all before:delay-100 group-hover:before:opacity-25 before:absolute before:-inset-1 before:block before:bg-slate-400 before:blur-lg before:opacity-0">
-                <span className="relative group-hover:text-slate-200 group-hover:text-shadow-slate-200/40 transition-all delay-100">Front End Engineer</span>
+                <span className="relative group-hover:text-slate-200 group-hover:text-shadow-slate-200/40 transition-all delay-100">Fullstack, Front End loving engineer</span>
               </span>{" "}
               with a passion for building user interfaces. I have an eye for detail and love creating features that perform as well as they look. Knowing I contribute to features
               users use daily is so awesome to me.

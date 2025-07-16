@@ -27,8 +27,14 @@ export default function Background() {
 
       const gradients: IGradient[] = [];
       const minOpacity = 0.05;
-      const maxOpacity = 0.1;
-      let colors = ["rgba(50, 130, 220, opacity)", "rgba(150, 60, 200, opacity)", "rgba(200, 120, 50, opacity)", "rgba(60, 200, 140, opacity)", "rgba(180, 70, 140, opacity)"];
+      const maxOpacity = 0.12;
+      let colors = [
+        "rgba(30, 144, 255, opacity)", 
+        "rgba(138, 43, 226, opacity)", 
+        "rgba(255, 140, 0, opacity)", 
+        "rgba(34, 197, 94, opacity)", 
+        "rgba(236, 72, 153, opacity)", 
+      ];
       colors = colors.map((color) => {
         const randomOpacity = Math.random() * (maxOpacity - minOpacity) + minOpacity;
         return color.replace("opacity", randomOpacity.toString());
